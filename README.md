@@ -1,6 +1,9 @@
 <p align="center"><img src="https://raw.githubusercontent.com/NotWes/Growconomy/master/public/img/logo.png"></p>
 <br>
 
+![](https://img.shields.io/github/issues/NotWes/Growconomy.svg?style=flat-square)
+![](https://img.shields.io/github/license/NotWes/Growconomy.svg?style=flat-square)
+
 ## About Growconomy
 Growconomy is an online price checker for [Growtopia](https://www.growtopiagame.com/). Our goal is to supply you with the most accurate prices. You can help us with that!
 
