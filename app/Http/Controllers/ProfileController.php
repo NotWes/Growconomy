@@ -55,7 +55,14 @@ class ProfileController extends Controller
     }
 
     public function staff(){
-        return view('public.staff');
+        $owner = User::where('permission', 6)->orderBy('name', 'ASC')->get();
+        $admin = User::where('permission', 5)->orderBy('name', 'ASC')->get();
+        $manager = User::where('permission', 4)->orderBy('name', 'ASC')->get();
+        $seditor = User::where('permission', 3)->orderBy('name', 'ASC')->get();
+        $editor = User::where('permission', 2)->orderBy('name', 'ASC')->get();
+        $intern = User::where('permission', 1)->orderBy('name', 'ASC')->get();
+
+        return view('public.staff', compact('owner', 'admin', 'manager', 'seditor', 'editor', 'intern'));
     }
 
 }
