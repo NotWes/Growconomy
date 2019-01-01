@@ -9,6 +9,7 @@
                     </header>
 
                     <div class="row team">
+                        @foreach($ceo as $ceo)
                         <div class="col-md-6 col-lg-4">
                             <div class="card team__item">
                                 <img src="{{ env('APP_URL') }}/avatars/default.jpg" class="team__img" alt="">
@@ -27,6 +28,7 @@
                                 </div>
                             </div>
                         </div>
+                        @endforeach
 
                         <div class="col-md-6 col-lg-4">
                             <div class="card team__item">
