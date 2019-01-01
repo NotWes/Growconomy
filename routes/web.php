@@ -26,9 +26,7 @@ Route::group(['prefix' => 'history'], function() {
 });
 
 // Staff Page
-Route::get('/staff', function () {
-    return view('public.staff');
-});
+Route::get('/', 'ProfileController@staff');
 
 //About Us Page
 Route::get('/about', function () {

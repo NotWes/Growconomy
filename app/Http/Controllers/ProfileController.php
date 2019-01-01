@@ -54,4 +54,8 @@ class ProfileController extends Controller
 
     }
 
+    public function staff(){
+        return view('public.staff');
+    }
+
 }
