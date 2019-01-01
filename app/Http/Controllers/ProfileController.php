@@ -28,6 +28,7 @@ class ProfileController extends Controller
         $this->validate($request, [
             'name' => 'string|required',
             'email' => 'email|required',
+            'quote' => 'string|nullable',
             'ign' => 'string|nullable',
             'growtopiaf' => 'string|nullable',
             'bio' => 'string|nullable|max:500',
@@ -37,6 +38,7 @@ class ProfileController extends Controller
         
         $user->name = $request->name;
         $user->email = $request->email;
+        $user->quote = $request->quote;
         $user->ign = $request->ign;
         $user->growtopia_forums = $request->growtopiaf;
         $user->bio = $request->bio;

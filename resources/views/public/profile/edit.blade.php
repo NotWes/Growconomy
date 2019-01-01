@@ -35,6 +35,12 @@
                         <i class="form-group__bar"></i>
                     </div>
 
+                    <h4>Quote</h4>
+                    <div class="form-group">
+                        <input id="quote" name="quote" type="text" class="form-control input-lg"  value="{{ Auth::user()->quote }}">
+                        <i class="form-group__bar"></i>
+                    </div>
+
                     <h4>IGN</h4>
                     <div class="form-group">
                         <input id="ign" name="ign" type="text" class="form-control input-lg"  value="{{ Auth::user()->ign }}">

@@ -18,7 +18,7 @@
                                     <h4 class="card-title">{{ $owner->name }}</h4>
                                     <h6 class="card-subtitle">Owner</h6>
 
-                                    <p class="card-text">Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Aenean eu leoquam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Donec id elit non mi porta gravida at eget metus.</p>
+                                    <p class="card-text">"{{ $owner->quote }}"</p>
                                 </div>
                             </div>
                         </div>
@@ -32,7 +32,7 @@
                                     <h4 class="card-title">{{ $admin->name }}</h4>
                                     <h6 class="card-subtitle">Administrator</h6>
 
-                                    <p class="card-text">Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Cras mattis consectetur purus sit amet fermentum. Maecenas sed diam eget risus varius blandit sit amet.</p>
+                                    <p class="card-text">"{{ $admin->quote }}"</p>
                                 </div>
                             </div>
                         </div>
@@ -46,7 +46,7 @@
                                     <h4 class="card-title">{{ $manager->name }}</h4>
                                     <h6 class="card-subtitle">Manager</h6>
 
-                                    <p class="card-text">Nullam id dolor id nibh ultricies vehicula ut id elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Vivamus sagittis lacus vel augue.</p>
+                                    <p class="card-text">"{{ $manager->quote }}"</p>
                                 </div>
                             </div>
                         </div>
@@ -60,7 +60,7 @@
                                     <h4 class="card-title">{{ $seditor->name }}</h4>
                                     <h6 class="card-subtitle">Senior Editor</h6>
 
-                                    <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Maecenas faucibus mollis interdum. Donec id elit non mi porta gravida at eget metus.</p>
+                                    <p class="card-text">"{{ $seditor->quote }}"</p>
                                 </div>
                             </div>
                         </div>
@@ -74,7 +74,7 @@
                                     <h4 class="card-title">{{ $editor->name }}</h4>
                                     <h6 class="card-subtitle">Editor</h6>
 
-                                    <p class="card-text">Commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Cras mattis consectetur purus sit amet fermentum. Maecenas sed diam eget risus varius blandit sit amet.</p>
+                                    <p class="card-text">"{{ $editor->quote }}"</p>
                                 </div>
                             </div>
                         </div>
@@ -88,7 +88,7 @@
                                     <h4 class="card-title">{{ $intern->name }}</h4>
                                     <h6 class="card-subtitle">Intern</h6>
 
-                                    <p class="card-text">Sed posuere consectetur est at lobortis. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nullam quis risus eget urna mollis ornare veleuleo.</p>
+                                    <p class="card-text">"{{ $intern->quote }}"</p>
                                 </div>
                             </div>
                         </div>

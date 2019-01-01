@@ -18,6 +18,7 @@ class CreateUsersTable extends Migration
             $table->string('name');
             $table->string('email')->unique();
             $table->string('avatar')->default('default.jpg');
+            $table->string('quote')->nullable();
             $table->string('bio')->nullable();
             $table->string('ign')->nullable();
             $table->string('growtopia_forums')->nullable();
