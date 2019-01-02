@@ -10,9 +10,12 @@ use Auth;
 class HistoryController extends Controller
 {
     function index($name){
-    	$item = Item::where('name', $name)->firstOrFail();
+    	$changed = str_replace('-', ' ', $name);
+    	$item = Item::where('name', $changed)->firstOrFail();
 
     	return view('public.history.index', compact('item'));
+
+    	//return str_replace(' ', '-', $name);
     }
 
     public function edit($name, Request $request){

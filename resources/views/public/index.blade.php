@@ -38,7 +38,7 @@
                                         <div class="dropdown-menu dropdown-menu-right" x-placement="bottom-end" style="position: absolute; transform: translate3d(35px, 26px, 0px); top: 0px; left: 0px; will-change: transform;">
                                             <!-- <a href="" class="dropdown-item">Report</a>
                                             <a href="" class="dropdown-item">Wiki</a> -->
-                                            <a href="{{ env('APP_URL') }}/history/{{$daily->name}}" class="dropdown-item">History</a>
+                                            <a href="{{ env('APP_URL') }}/history/{{ str_replace(' ', '-', $daily->name )}}" class="dropdown-item">History</a>
                                             <!-- <a href="" class="dropdown-item">Market</a> -->
                                         </div>
                                     </div>
@@ -114,7 +114,7 @@
                                         <div class="dropdown-menu dropdown-menu-right" x-placement="bottom-end" style="position: absolute; transform: translate3d(35px, 26px, 0px); top: 0px; left: 0px; will-change: transform;">
                                             <!-- <a href="" class="dropdown-item">Report</a>
                                             <a href="" class="dropdown-item">Wiki</a> -->
-                                            <a href="{{ env('APP_URL') }}/history/{{$item->name}}" class="dropdown-item">History</a>
+                                            <a href="{{ env('APP_URL') }}/history/{{ str_replace(' ', '-', $item->name )}}" class="dropdown-item">History</a>
                                             <!-- <a href="" class="dropdown-item">Market</a> -->
                                         </div>
                                     </div>
