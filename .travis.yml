@@ -4,4 +4,5 @@ php:
 
 before_script:
 - composer install
+- cp .travis/env.travis.php env.php
 - php artisan key:generate
